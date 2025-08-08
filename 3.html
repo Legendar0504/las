@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центр здоровья - Наши услуги</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .bg-hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-heartbeat text-3xl text-blue-600 mr-3"></i>
+                <h1 class="text-2xl font-bold text-gray-800">Центр здоровья</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-gray-600 hover:text-blue-600">Главная</a>
+                <a href="#" class="text-blue-600 font-medium">Услуги</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600">Специалисты</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600">Контакты</a>
+            </nav>
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-hero text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Профессиональные услуги для вашего здоровья</h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Комплексный подход к восстановлению и поддержанию здоровья вашего тела</p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300">
+                Записаться на прием
+            </button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Наши услуги</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Мы предлагаем широкий спектр услуг для восстановления и поддержания вашего здоровья на высоком уровне</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Остеопатия -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100">
+                    <div class="h-48 bg-blue-50 flex items-center justify-center">
+                        <i class="fas fa-bone text-6xl text-blue-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Остеопатия</h3>
+                        <p class="text-gray-600 mb-4">Мягкие мануальные техники для восстановления баланса в организме, снятия напряжения и улучшения подвижности суставов.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-blue-600 font-bold">от 3 500 ₽</span>
+                           <a href="ostus.html"><button class="text-blue-600 hover:text-blue-800 font-medium">Подробнее →</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Кинезиология -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100">
+                    <div class="h-48 bg-green-50 flex items-center justify-center">
+                        <i class="fas fa-brain text-6xl text-green-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Кинезиология</h3>
+                        <p class="text-gray-600 mb-4">Диагностика и коррекция дисбалансов в организме через мышечное тестирование и специальные техники.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-green-600 font-bold">от 4 000 ₽</span>
+                            <a href="kinus.html"><button class="text-green-600 hover:text-green-800 font-medium">Подробнее →</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Массаж -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100">
+                    <div class="h-48 bg-purple-50 flex items-center justify-center">
+                        <i class="fas fa-spa text-6xl text-purple-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Профессиональный массаж</h3>
+                        <p class="text-gray-600 mb-4">Различные виды массажа: лечебный, расслабляющий, спортивный, лимфодренажный для улучшения самочувствия.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-purple-600 font-bold">от 2 500 ₽</span>
+                            <a href="masus.html"><button class="text-purple-600 hover:text-purple-800 font-medium">Подробнее →</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Реабилитация -->
+                <div class="service-card bg-white rounded-lg shadow-md overflow-hidden border border-gray-100">
+                    <div class="h-48 bg-yellow-50 flex items-center justify-center">
+                        <i class="fas fa-wheelchair text-6xl text-yellow-600"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Прочие</h3>
+                        <p class="text-gray-600 mb-4">Прочие услуги нашего центра</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-yellow-600 font-bold">от 3 800 ₽</span>
+                            <a href="pr.html"><button class="text-yellow-600 hover:text-yellow-800 font-medium">Подробнее →</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">О центре "КДМ"</h3>
+                    <p class="text-blue-200">Мы помогаем нашим клиентам обрести здоровье и гармонию с помощью современных методик и индивидуального подхода.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Услуги</h3>
+                    <ul class="space-y-2">
+                        <li><a href="ost.html" class="text-blue-200 hover:text-white transition">Остеопатия</a></li>
+                        <li><a href="kin.html" class="text-blue-200 hover:text-white transition">Кинезиология</a></li>
+                        <li><a href="mas.html" class="text-blue-200 hover:text-white transition">Массаж</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white transition">Комплексные программы</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Контакты</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-blue-300"></i>
+                            <span class="text-blue-200">"Санкт-Петербург, улица Комиссара Смирнова, 15В,  Выборгский ДК"</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-blue-300"></i>
+                            <span class="text-blue-200">+7 (---) ++-++-++</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-blue-300"></i>
+                            <span class="text-blue-200">@email.ru</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    </form>
+                    <div class="mt-4">
+                        <p class="text-blue-200 mb-2">Мы в соцсетях:</p>
+                        <div class="flex space-x-3">
+<a href="https://m.vk.com/therunoflife?from=groups" 
+   class="bg-blue-800 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center transition"
+   target="_blank"
+   title="Наша группа ВКонтакте">
+   <i class="fab fa-vk text-white text-lg"></i>
+</a>
+<a href="https://t.me/kinesiologrustam" 
+   class="bg-blue-800 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center transition"
+   target="_blank"
+   title="Написать в Telegram">
+   <i class="fab fa-telegram text-white text-lg"></i>
+</a>
+                                    <a href="https://wa.me/номер_телефона" 
+                                       class="bg-blue-800 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center transition"
+                                       target="_blank"
+                                       title="Написать в WhatsApp">
+                                       <i class="fab fa-whatsapp text-white text-lg"></i>
+                                    </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-blue-800 mt-8 pt-6 text-center text-blue-300">
+                <p>© 2023 Оздоровительный центр "КДМ". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Простая логика для мобильного меню
+        document.querySelector('button.md\\:hidden').addEventListener('click', function() {
+            const nav = document.querySelector('nav.hidden');
+            if (nav) {
+                nav.classList.toggle('hidden');
+                nav.classList.toggle('flex');
+                nav.classList.toggle('flex-col');
+                nav.classList.toggle('absolute');
+                nav.classList.toggle('top-16');
+                nav.classList.toggle('right-4');
+                nav.classList.toggle('bg-white');
+                nav.classList.toggle('p-4');
+                nav.classList.toggle('rounded-lg');
+                nav.classList.toggle('shadow-lg');
+                nav.classList.toggle('space-y-4');
+            }
+        });
+    </script>
+</body>
+</html>

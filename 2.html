@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги специалистов | Остеопат, Кинезиолог, Массажист</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .specialist-card:hover .specialist-img {
+            transform: scale(1.05);
+        }
+        .specialist-img {
+            transition: transform 0.3s ease;
+        }
+        .price-tag {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: #3b82f6;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-hand-holding-medical text-blue-500 text-3xl mr-3"></i>
+                    <h1 class="text-2xl font-bold text-gray-800">Центр здоровья и реабилитации</h1>
+                </div>
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#" class="text-gray-600 hover:text-blue-500 transition">Главная</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-blue-500 transition">Услуги</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-blue-500 transition">Специалисты</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-blue-500 transition">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Профессиональные услуги для вашего здоровья</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Остеопатия, кинезиология и массаж для восстановления здоровья и улучшения качества жизни</p>
+            <button class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 shadow-lg">
+                Записаться на прием
+            </button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Наши услуги</h2>
+            
+            <!-- Osteopath Services -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <div class="bg-blue-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-bone text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800">Услуги остеопата</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300 relative border border-gray-100">
+                        <div class="price-tag">₽4500</div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-spa text-blue-600"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800">Краниосакральная терапия</h4>
+                            </div>
+                            <p class="text-gray-600 mb-4">Мягкое воздействие на кости черепа и крестец для нормализации краниосакрального ритма и улучшения циркуляции спинномозговой жидкости.</p>
+                            <ul class="text-gray-600 mb-4 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Снимает головные боли</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Улучшает сон</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Помогает при стрессах</span>
+                                </li>
+                            </ul>
+                            <button class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300 relative border border-gray-100">
+                        <div class="price-tag">₽5000</div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-spine text-blue-600"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800">Висцеральная остеопатия</h4>
+                            </div>
+                            <p class="text-gray-600 mb-4">Работа с внутренними органами для восстановления их подвижности и нормализации функций через воздействие на связки и фасции.</p>
+                            <ul class="text-gray-600 mb-4 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Улучшает пищеварение</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Нормализует работу печени</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Помогает при запорах</span>
+                                </li>
+                            </ul>
+                            <button class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300 relative border border-gray-100">
+                        <div class="price-tag">₽5500</div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-blue-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-child text-blue-600"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800">Остеопатия для детей</h4>
+                            </div>
+                            <p class="text-gray-600 mb-4">Щадящие техники для коррекции последствий родовых травм, нарушений осанки и других проблем у детей любого возраста.</p>
+                            <ul class="text-gray-600 mb-4 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Коррекция кривошеи</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Помощь при коликах</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Лечение сколиоза</span>
+                                </li>
+                            </ul>
+                            <button class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kinesiologist Services -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <div class="bg-green-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-brain text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800">Услуги кинезиолога</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300 relative border border-gray-100">
+                        <div class="price-tag">₽4000</div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-muscle text-green-600"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800">Прикладная кинезиология</h4>
+                            </div>
+                            <p class="text-gray-600 mb-4">Диагностика и лечение через мышечное тестирование, выявление дисбалансов в организме и их коррекция.</p>
+                            <ul class="text-gray-600 mb-4 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Выявление скрытых проблем</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Коррекция осанки</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Восстановление баланса</span>
+                                </li>
+                            </ul>
+                            <button class="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition duration-300">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300 relative border border-gray-100">
+                        <div class="price-tag">₽4500</div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-dna text-green-600"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800">Кинезиотерапия</h4>
+                            </div>
+                            <p class="text-gray-600 mb-4">Лечение движением с индивидуальным подбором упражнений для восстановления функций опорно-двигательного аппарата.</p>
+                            <ul class="text-gray-600 mb-4 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Реабилитация после травм</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Укрепление мышц</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Улучшение подвижности</span>
+                                </li>
+                            </ul>
+                            <button class="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition duration-300">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300 relative border border-gray-100">
+                        <div class="price-tag">₽5000</div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-green-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-heartbeat text-green-600"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800">Психоэмоциональная коррекция</h4>
+                            </div>
+                            <p class="text-gray-600 mb-4">Работа с психосоматическими проблемами через телесные практики, снятие стресса и эмоциональных блоков.</p>
+                            <ul class="text-gray-600 mb-4 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Снятие тревожности</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Работа со страхами</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Улучшение психоэмоционального состояния</span>
+                                </li>
+                            </ul>
+                            <button class="w-full bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition duration-300">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Massage Services -->
+            <div class="mb-16">
+                <div class="flex items-center mb-8">
+                    <div class="bg-purple-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-spa text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800">Услуги массажиста</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300 relative border border-gray-100">
+                        <div class="price-tag">₽3500</div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-purple-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-hands text-purple-600"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800">Лечебный массаж спины</h4>
+                            </div>
+                            <p class="text-gray-600 mb-4">Профессиональный массаж спины для снятия мышечных спазмов, улучшения кровообращения и устранения болевого синдрома.</p>
+                            <ul class="text-gray-600 mb-4 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Снимает боли в спине</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Улучшает осанку</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Расслабляет мышцы</span>
+                                </li>
+                            </ul>
+                            <button class="w-full bg-purple-500 text-white py-2 px-4 rounded-lg hover:bg-purple-600 transition duration-300">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300 relative border border-gray-100">
+                        <div class="price-tag">₽4000</div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-purple-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-user text-purple-600"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800">Общий массаж тела</h4>
+                            </div>
+                            <p class="text-gray-600 mb-4">Комплексный массаж всего тела для общего расслабления, снятия напряжения и улучшения работы всех систем организма.</p>
+                            <ul class="text-gray-600 mb-4 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Снимает стресс</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Улучшает сон</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Повышает иммунитет</span>
+                                </li>
+                            </ul>
+                            <button class="w-full bg-purple-500 text-white py-2 px-4 rounded-lg hover:bg-purple-600 transition duration-300">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300 relative border border-gray-100">
+                        <div class="price-tag">₽4500</div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-purple-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-running text-purple-600"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800">Спортивный массаж</h4>
+                            </div>
+                            <p class="text-gray-600 mb-4">Специализированный массаж для спортсменов, направленный на подготовку мышц к нагрузкам и ускорение восстановления после тренировок.</p>
+                            <ul class="text-gray-600 mb-4 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Улучшает результаты</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Снижает риск травм</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Ускоряет восстановление</span>
+                                </li>
+                            </ul>
+                            <button class="w-full bg-purple-500 text-white py-2 px-4 rounded-lg hover:bg-purple-600 transition duration-300">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Other Services -->
+            <div>
+                <div class="flex items-center mb-8">
+                    <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                        <i class="fas fa-plus-circle text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-gray-800">Прочие услуги</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300 relative border border-gray-100">
+                        <div class="price-tag">₽3000</div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-yellow-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-couch text-yellow-600"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800">Лимфодренажный массаж</h4>
+                            </div>
+                            <p class="text-gray-600 mb-4">Мягкое воздействие на лимфатическую систему для выведения токсинов, снятия отеков и улучшения обмена веществ.</p>
+                            <ul class="text-gray-600 mb-4 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Уменьшает отеки</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Улучшает цвет лица</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Помогает при целлюлите</span>
+                                </li>
+                            </ul>
+                            <button class="w-full bg-yellow-500 text-white py-2 px-4 rounded-lg hover:bg-yellow-600 transition duration-300">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300 relative border border-gray-100">
+                        <div class="price-tag">₽2500</div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-yellow-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-head-side-mask text-yellow-600"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800">Массаж лица</h4>
+                            </div>
+                            <p class="text-gray-600 mb-4">Специальные техники для улучшения тонуса кожи лица, разглаживания морщин и улучшения кровообращения.</p>
+                            <ul class="text-gray-600 mb-4 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Омолаживающий эффект</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Уменьшает отечность</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Повышает упругость кожи</span>
+                                </li>
+                            </ul>
+                            <button class="w-full bg-yellow-500 text-white py-2 px-4 rounded-lg hover:bg-yellow-600 transition duration-300">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden service-card transition duration-300 relative border border-gray-100">
+                        <div class="price-tag">₽6000</div>
+                        <div class="p-6">
+                            <div class="flex items-center mb-4">
+                                <div class="bg-yellow-100 p-2 rounded-full mr-3">
+                                    <i class="fas fa-user-md text-yellow-600"></i>
+                                </div>
+                                <h4 class="text-xl font-semibold text-gray-800">Комплексный сеанс</h4>
+                            </div>
+                            <p class="text-gray-600 mb-4">Комбинированный сеанс, включающий элементы остеопатии, кинезиологии и массажа для комплексного решения проблем.</p>
+                            <ul class="text-gray-600 mb-4 space-y-2">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Индивидуальный подход</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Максимальная эффективность</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                    <span>Быстрый результат</span>
+                                </li>
+                            </ul>
+                            <button class="w-full bg-yellow-500 text-white py-2 px-4 rounded-lg hover:bg-yellow-600 transition duration-300">
+                                Подробнее
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialists Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Наши специалисты</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Specialist 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden specialist-card transition duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                             alt="Остеопат" 
+                             class="w-full h-full object-cover specialist-img">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Александр Петров</h3>
+                        <p class="text-blue-500 font-semibold mb-4">Врач-остеопат</p>
+                        <p class="text-gray-600 mb-4">Опыт работы более 12 лет. Специализируется на лечении заболеваний опорно-двигательного аппарата и реабилитации после травм.</p>
+                        <div class="flex space-x-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Краниосакральная терапия</span>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">Детская остеопатия</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Specialist 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden specialist-card transition duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                             alt="Кинезиолог" 
+                             class="w-full h-full object-cover specialist-img">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Елена Смирнова</h3>
+                        <p class="text-green-500 font-semibold mb-4">Кинезиолог</p>
+                        <p class="text-gray-600 mb-4">Опыт работы 8 лет. Специализируется на прикладной кинезиологии и психосоматике. Помогает восстановить баланс организма.</p>
+                        <div class="flex space-x-2">
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Мышечное тестирование</span>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">Психоэмоциональная коррекция</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Specialist 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden specialist-card transition duration-300">
+                    <div class="relative overflow-hidden h-64">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Массажист" 
+                             class="w-full h-full object-cover specialist-img">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Иван Козлов</h3>
+                        <p class="text-purple-500 font-semibold mb-4">Массажист</p>
+                        <p class="text-gray-600 mb-4">Опыт работы 10 лет. Владеет различными техниками массажа от классического до спортивного и лимфодренажного.</p>
+                        <div class="flex space-x-2">
+                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Лечебный массаж</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded">Спортивный массаж</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Готовы начать путь к здоровью?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Запишитесь на консультацию к нашим специалистам и получите индивидуальный подход к решению ваших проблем</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <button class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 shadow-lg">
+                    <i class="fas fa-phone-alt mr-2"></i> Записаться по телефону
+                </button>
+                <button class="bg-transparent border-2 border-white text-white font-bold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 shadow-lg">
+                    <i class="fas fa-calendar-alt mr-2"></i> Онлайн запись
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Центр здоровья</h3>
+                    <p class="text-gray-400">Профессиональная помощь в восстановлении здоровья и улучшении качества жизни.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Контакты</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>г. Москва, ул. Здоровья, 15</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3"></i>
+                            <span>+7 (495) 123-45-67</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>info@health-center.ru</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Часы работы</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Пн-Пт: 9:00 - 21:00</li>
+                        <li>Сб: 10:00 - 18:00</li>
+                        <li>Вс: выходной</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Соцсети</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-600 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-400 transition">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center hover:bg-green-500 transition">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 Центр здоровья и реабилитации. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
